@@ -31,6 +31,8 @@
     "prettier"
   ],
   "rules": {
+    "no-return-assign": "off",
+    "no-param-reassign": "off",
     "camelcase": "off",
     "import/no-duplicates": "off",
     "react/jsx-props-no-spreading": "off",

@@ -4,4 +4,38 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --magenta-100: #FF57B2;
+
+  --gray-50: #F8F8F8;
+  --gray-100: #D7D7D7;
+  --gray-150: #BBBBBB;
+  --gray-900: #1A1D23;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--gray-100);
+}
+
+body,
+button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
