@@ -106,7 +106,7 @@ export default function Post({ post, preview }: PostProps): JSX.Element {
               </article>
             ))}
 
-            <div
+            {/* <div
               className={`${styles.navigationPost} ${commonStyles.container}`}
             >
               {post.prevPost.uid && (
@@ -126,7 +126,7 @@ export default function Post({ post, preview }: PostProps): JSX.Element {
                   </a>
                 </Link>
               )}
-            </div>
+            </div> */}
 
             <Comments />
 
@@ -196,14 +196,14 @@ export const getStaticProps: GetStaticProps = async ({
   const post = {
     uid: response.uid,
     first_publication_date: response.first_publication_date,
-    prevPost: {
-      uid: prevPost.results[0]?.uid ?? null,
-      title: prevPost.results[0]?.data.title ?? null,
-    },
-    nextPost: {
-      uid: nextPost?.results[0]?.uid ?? null,
-      title: nextPost?.results[0]?.data.title ?? null,
-    },
+    // prevPost: {
+    //   uid: prevPost.results[0]?.uid ?? null,
+    //   title: prevPost.results[0]?.data.title ?? null,
+    // },
+    // nextPost: {
+    //   uid: nextPost?.results[0]?.uid ?? null,
+    //   title: nextPost?.results[0]?.data.title ?? null,
+    // },
     data: {
       title: response.data.title,
       subtitle: response.data.subtitle,
