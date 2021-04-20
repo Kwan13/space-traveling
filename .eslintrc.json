@@ -31,6 +31,8 @@
     "prettier"
   ],
   "rules": {
+    "consistent-return": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-return-assign": "off",
     "no-param-reassign": "off",
     "camelcase": "off",
